@@ -1,0 +1,48 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff5f6d, #ffc3a0);
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.greeting {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7eb3, #ff65a3, #ff4b5c);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 3s ease-in-out infinite;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Animation for color change */
+@keyframes colorChange {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
